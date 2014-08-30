@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Patient.master.cs" Inherits="Patient_Patient" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    
+    <form id="form1" runat="server">
+            
+  <div class="header">
+    <div class="logo"><a href="Default.aspx"><img src="../App_Themes/Theme1/images/ODASLOGO1.png" width="85" height="101"/></a></div>
+   <div class="midtitle">Your own online assistant. </div>
+     
+      
+       <div class="right_header"> 
+           
+          <a href="../SignOut.aspx" class="logout">Log out</a>
+       </div>
+      </div>
+        <div id="cssmenu">
+        <ul>
+       
+          <li><a href="PatientProfile.aspx">Appointment Booking</a></li> 
+                         <li><a  href="#">My Appoinments</a>
+                  <ul>
+                      <li><a href="#">Upcoming Appointment</a></li>
+                      <li><a href="#">Appointment History</a></li>
+                  </ul>
+              </li>
+            <li><a href="#">Account Settings</a></li>
+
+
+            </ul></div>     
+          
+         
+        <div id="middle_box"></div>   
+               
+                    
+    
+           
+  <div id="main_content">
+            
+   <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+     
+       
+       <p>
+           &nbsp;</p>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+                 <div id="footer">this is footer
+                 </div>
+    </form>
+</body>
+</html>
