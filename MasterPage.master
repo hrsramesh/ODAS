@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+    
+<body>
+    
+    <form id="form1" runat="server">
+            
+  <div class="header">
+    <div class="logo"><a href="Default.aspx"><img src="App_Themes/Theme1/images/ODASLOGO1.png" width="85" height="101"/></a></div>
+   <div class="midtitle">Your own online assistant.
+     
+    
+   </div>
+       <div class="right_header">   
+              
+          <a href="SignIn.aspx" class="login">Log in</a> 
+           
+<a href="SignUp.aspx" class="sign_up">Sign up</a> </div>
+           </div>
+  
+ <div id="cssmenu">
+        <ul>
+       
+          <li><a href="#">About Us </a></li>
+          
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+   
+        <div id="middle_box">
+    
+            </div>
+  <div id="main_content">
+<div class="left">         
+   <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">    
+       
+       <p>
+           &nbsp;</p>   
+       
+    </asp:ContentPlaceHolder>
+          </div>
+
+
+      <div class="right">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        <p>
+           </p>
+          </asp:ContentPlaceHolder>
+  </div></div>
+    
+  
+        
+    
+      
+        
+  <div id="footer">
+      this is footer
+    <%--<div class="copyright"> <img src="images/footer_logo.gif" alt="" /> </div>
+    <div class="center_footer">&copy; Medical Clinic 2008. All Rights Reserved</div>
+    <div class="footer_links"> <a href="#"><img src="images/csstemplatesmarket.gif" alt="" border="0" /></a> </div>--%>
+  </div>
+    </form>
+</body>
+</html>

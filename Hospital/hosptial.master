@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="hosptial.master.cs" Inherits="Hospital_hosptial" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="main_container">
+  <div class="header">
+    <div id="logo"><a href="#"><img src="App_Themes/Theme1/images/logo.png" alt="" width="162" height="54" border="0" /></a></div>
+    <div class="right_header">
+      <div class="top_menu"> 
+         
+          <a href="#" class="login">Log Out</a>
+          
+
+          
+<%--<a href="#" class="sign_up">signup</a> --%>
+
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a class="current" href="#">Home</a></li>
+            <li>
+                <a href="HospitalInformation.aspx">My Information</a>
+            </li>
+            
+                 <li><a href="#">My Doctor
+              </a>
+                     
+                     <ul class="hos">
+                      <li>
+                      <a href="#">ADD Doctor</a>
+                      <a href="#">DELETE Doctor</a>
+                      <a href="#">UPDATE Doctor</a>
+                  </li>
+            </ul>
+         
+                    
+
+                           
+                 
+              </ul>
+          </li>
+                  <
+
+          <li><a href="#"></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+        <div id="middle_box">
+    <div class="middle_box_content"><img src="images/banner_content.jpg" alt="" /></div>
+            </div>
+             <div id="main_content">
+                 
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+       
+    
+     
+    
+      
+        
+
+    <div id="footer">
+            
+    
+    
+    </div>
+   
+    </form>
+</body>
+</html>
